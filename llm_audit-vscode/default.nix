@@ -9,7 +9,7 @@ vscode-utils.buildVscodeExtension {
     owner = "TheSaintDiratof";
     repo = "llm_audit-vscode";
     rev = "master";
-    hash = "sha256-K0AlGLheUezzKc4wG8cZAvFBBsd4kT/HqhxNbp17qdI=";
+    hash = "sha256-7GcpOshyNefh0tzxDXUjsu55fo+LlEcPgem8VdeVi5k=";
   };
   vscodeExtPublisher = "Diratof Azdimarlow";
   vscodeExtName = "llm_audit-vscode";
