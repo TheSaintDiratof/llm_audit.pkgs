@@ -6,6 +6,7 @@ pkgs.mkShell {
     llm_audit-vscode = callPackage ./default.nix {llm_audit = llm_audit;};
   in [
     python3Full git
+    llm_audit g4f
     (vscode-with-extensions.override{vscodeExtensions = [ llm_audit-vscode ];})
     nodejs
     typescript

@@ -8,6 +8,7 @@ pkgs.mkShell {
     git
     vim
     nodejs vscode
+    g4f
     llm_audit
   ];
   shellHook = ''

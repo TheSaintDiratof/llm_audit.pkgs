@@ -11,7 +11,7 @@ buildPythonPackage rec {
     owner = "TheSaintDiratof";
     repo = "llm_audit";
     rev = "master";
-    hash = "sha256-3ltLMmx1xqfZnA4v9KTQgwI3HJpGFYxJu6nrM9NhqSg=";
+    hash = "sha256-7D2aaUjD0ZmdYuWrjSZbGIdCidhcWi6kztWya+bR0GA=";
   };
   nativeBuildInputs = [ 
     pip
