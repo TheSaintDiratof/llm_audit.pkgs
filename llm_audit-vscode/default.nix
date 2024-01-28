@@ -8,7 +8,7 @@ vscode-utils.buildVscodeExtension {
   src = fetchFromGitHub {
     owner = "TheSaintDiratof";
     repo = "llm_audit-vscode";
-    rev = "master";
+    rev = "refs/tags/v{0.0.1}";
     hash = "sha256-7GcpOshyNefh0tzxDXUjsu55fo+LlEcPgem8VdeVi5k=";
   };
   vscodeExtPublisher = "Diratof Azdimarlow";

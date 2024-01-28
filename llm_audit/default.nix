@@ -7,10 +7,11 @@
 }:
 buildPythonPackage rec {
   name = "llm_audit";
+  version = "0.0.1";
   src = fetchFromGitHub {
     owner = "TheSaintDiratof";
     repo = "llm_audit";
-    rev = "master";
+    rev = "refs/tags/v${version}";
     hash = "sha256-F3tosVHKOxTZHneKMUfRJ8Kh5SdeCVk+GlF+ZN7ipiY=";
   };
   nativeBuildInputs = [ 
