@@ -1,7 +1,10 @@
 ## Packages for set of LLM Audit plugins and its dependencies
 There are:
+
 llm-audit which provides standalone CLI interface for LLMs
+
 llm\_audit-vscode which provides an extension for vscode which allows to send pieces of code to LLMs
+
 llm\_audit-vim which provides a plugin for vim which allows to send pieces of code to LLMs
 
 ## How to install
@@ -27,6 +30,8 @@ in [
 ];
 ```
 ## How to use
-In CLI just send piece of code to stdin of llm_audit
+In CLI just send piece of code to stdin of llm\_audit
+
 In Vim just select code via visual selection and type "llm" to ask LLM
+
 In VSCode just select code and type "llm\_audit-vscode.askLLM" to ask LLM
