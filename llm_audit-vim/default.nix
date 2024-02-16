@@ -8,7 +8,7 @@ let
     owner = "TheSaintDiratof";
     repo = "llm_audit-vim";
     rev = "refs/tags/v${version}";
-    hash = "sha256-HJntOA5sA2eN9R3uANFeDxgLExwEfOKO5XauvuyiUa8=";
+    hash = "sha256-T5kDpO0C4rRua6CejFoDI03d0kHqDCRHjNJLiO9FXPs=";
   };
 in vimUtils.buildVimPlugin {
   inherit src version;
