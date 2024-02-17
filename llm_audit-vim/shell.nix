@@ -7,9 +7,8 @@ pkgs.mkShell {
   in[
     python3Full git
     sqlite
-    ((vim_configurable.override { }).customize {
-      name = "vim";
-       vimrcConfig.packages.myplugins = {
+    (neovim.override {
+       configure.packages.myplugins = {
         start = [ llm_audit-vim ];
         opt = [];
       };

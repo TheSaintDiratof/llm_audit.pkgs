@@ -1,15 +1,17 @@
 { lib
 , fetchFromGitHub
 , vscode-utils
-, llm_audit }:
-vscode-utils.buildVscodeExtension {
-  version = "0.0.1";
+, llm_audit }: 
+let
+  version = "0.0.3";
+in vscode-utils.buildVscodeExtension {
+  version = version;
   name = "llm_audit-vscode";
   src = fetchFromGitHub {
     owner = "TheSaintDiratof";
     repo = "llm_audit-vscode";
-    rev = "master";
-    hash = "sha256-7GcpOshyNefh0tzxDXUjsu55fo+LlEcPgem8VdeVi5k=";
+    rev = "refs/tags/v${version}";
+    hash = "sha256-IUhn506EVqFBcUfyx9G9h1fTkni4f1X936a+En8crpc=";
   };
   vscodeExtPublisher = "Diratof Azdimarlow";
   vscodeExtName = "llm_audit-vscode";
