@@ -11,10 +11,10 @@ llm\_audit-vim which provides a plugin for vim which allows to send pieces of co
 
 ```Nix 
 users.users.user.packages = with pkgs; let
-  g4f = python3Packages.callPackage ../g4f-nix/default.nix {};
-  llm_audit = python3Packages.callPackage ./default.nix {g4f = g4f;};
-  llm_audit-vim = callPackage ./default.nix {llm_audit = llm_audit;};
-  llm_audit-vscode = callPackage ./default.nix {llm_audit = llm_audit;};
+  g4f = python3Packages.callPackage ./g4f-nix/default.nix {};
+  llm_audit = python3Packages.callPackage ./llm_audit/default.nix {g4f = g4f;};
+  llm_audit-vim = callPackage ./llm_audit-vim/default.nix {llm_audit = llm_audit;};
+  llm_audit-vscode = callPackage ./llm_audit-vscode/default.nix {llm_audit = llm_audit;};
 in [
   somePackages...
   llm_audit g4f # just for llm_audit CLI interface
