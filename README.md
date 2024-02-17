@@ -8,6 +8,7 @@ llm\_audit-vscode which provides an extension for vscode which allows to send pi
 llm\_audit-vim which provides a plugin for vim which allows to send pieces of code to LLMs
 
 ## How to install
+<<<<<<< HEAD
 
 ```Nix 
 users.users.user.packages = with pkgs; let
@@ -15,6 +16,14 @@ users.users.user.packages = with pkgs; let
   llm_audit = python3Packages.callPackage ./llm_audit/default.nix {g4f = g4f;};
   llm_audit-vim = callPackage ./llm_audit-vim/default.nix {llm_audit = llm_audit;};
   llm_audit-vscode = callPackage ./llm_audit-vscode/default.nix {llm_audit = llm_audit;};
+=======
+```Nix 
+users.users.user.packages = with pkgs; let
+  g4f = python3Packages.callPackage ../g4f-nix/default.nix {};
+  llm_audit = python3Packages.callPackage ./default.nix {g4f = g4f;};
+  llm_audit-vim = callPackage ./default.nix {llm_audit = llm_audit;};
+  llm_audit-vscode = callPackage ./default.nix {llm_audit = llm_audit;};
+>>>>>>> master
 in [
   somePackages...
   llm_audit g4f # just for llm_audit CLI interface
@@ -31,8 +40,12 @@ in [
 ];
 ```
 ## How to use
+<<<<<<< HEAD
 
 In CLI just send piece of code to stdin of llm_audit
+=======
+In CLI just send piece of code to stdin of llm\_audit
+>>>>>>> master
 
 In Vim just select code via visual selection and type "llm" to ask LLM
 

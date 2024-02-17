@@ -3,7 +3,7 @@
 , vscode-utils
 , llm_audit }: 
 let
-  version = "0.0.2";
+  version = "0.0.3";
 in vscode-utils.buildVscodeExtension {
   version = version;
   name = "llm_audit-vscode";
@@ -11,7 +11,7 @@ in vscode-utils.buildVscodeExtension {
     owner = "TheSaintDiratof";
     repo = "llm_audit-vscode";
     rev = "refs/tags/v${version}";
-    hash = "sha256-VVJNi12MGg/Q06okIS/idP14vmVocaWojhrdXsR8nKs=";
+    hash = "sha256-IUhn506EVqFBcUfyx9G9h1fTkni4f1X936a+En8crpc=";
   };
   vscodeExtPublisher = "Diratof Azdimarlow";
   vscodeExtName = "llm_audit-vscode";
